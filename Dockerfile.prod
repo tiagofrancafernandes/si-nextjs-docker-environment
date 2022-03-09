@@ -1,0 +1,13 @@
+FROM node:14.19.0-stretch
+
+WORKDIR /usr/src/app/next-app
+
+COPY ./next-app/package*.json ./
+
+RUN npm install
+
+EXPOSE 3000
+
+# CMD ["npm", "run", "dev"]
+
+CMD ["bash", "-c", "npm run build && npm start"]
