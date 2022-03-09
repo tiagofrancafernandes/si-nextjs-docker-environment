@@ -14,3 +14,10 @@
     > 2.  Renomeie o arquivo `docker-compose.yml.prod` para `docker-compose.yml`
 
 * 3- Execute o comando `docker-compose up`
+
+
+----
+
+## TODO
+
+- Receber parâmetros por arquivo `.env` (porta, etc)
